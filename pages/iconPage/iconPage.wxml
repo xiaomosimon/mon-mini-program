@@ -1,0 +1,7 @@
+<!--pages/iconPage/iconPage.wxml-->
+<view class="test-class">
+  <text class="iconfont icon-lianxiren" style="font-size: 60rpx; color: red;"></text>
+  <iconfont icon="icon-lianxiren" fontStyle="font-size: 60rpx; color: red;"></iconfont>
+  <iconfont icon="icon-nidinghetong" fontStyle="font-size: 60rpx; color: red;"></iconfont>
+  <text>1231231</text>
+</view>

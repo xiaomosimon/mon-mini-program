@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "areaSelection": "../../components/areaSelection/areaSelection"
+  }
+}

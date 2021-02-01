@@ -1,0 +1,6 @@
+/* pages/iconPage/iconPage.wxss */
+.test-class {
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+}
