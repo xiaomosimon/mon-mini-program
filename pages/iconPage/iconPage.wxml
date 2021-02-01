@@ -1,0 +1,11 @@
+<!--pages/iconPage/iconPage.wxml-->
+<view class="icon-page">
+  <view class="icon-list">
+    <text class="iconfont icon-xiaomo3" style="font-size: 60rpx; color: red;"></text>
+    <text>icon-xiaomo3</text>
+  </view>
+  <view class="icon-list" wx:for="{{iconList}}" wx:for-item="icon">
+    <iconfont icon="{{icon}}" fontStyle="font-size: 60rpx; color: #5ba5ef;"></iconfont>
+    <text>{{icon}}</text>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<!--components/areaSelection/areaSelection.wxml-->
+<view class="area-selection">
+  <view class="area-header">选择国家或地区</view>
+  <scroll-view class="area-content" scroll-y scroll-with-animation bindscroll="onScrollViewScroll"
+    scroll-top="{{scrollViewScrollTop}}">
+    <view class="area-hot">
+      <view class="area-hot__title pl-30 mb-40">热门国家</view>
+      <view class="pl-30 mb-40" bindtap="onCountryTap">
+        <view class="area-hot__buttons" wx:for="{{hotCountryList}}" wx:for-item="hotCountry" wx:key="id"
+          data-country="{{hotCountry}}">{{hotCountry.countryCN}}</view>
+      </view>
+    </view>
+    <view wx:for="{{filterNavList}}" wx:for-item="nav" wx:key="index" bindtap="onCountryTap">
+      <view class="area-country-initial pl-30">{{nav}}</view>
+      <view class="area-country" wx:for="{{countrySortList[nav]}}" wx:for-item="country" wx:key="id"
+        data-country="{{country}}">{{country.countryCN}}</view>
+    </view>
+  </scroll-view>
+
+  <view class="area-sider" bindtap="onNavTap" data-nav="parent">
+    <view class="area-nav" data-nav="hot" style="{{currentNav === 'hot' ? 'color:#53A1FF;': ''}}">热门</view>
+    <view class="area-nav" wx:for="{{navList}}" wx:for-item="nav" wx:key="nav" data-nav="{{nav}}"
+      style="{{currentNav === nav ? 'color:#53A1FF;': ''}}">{{nav}}</view>
+  </view>
+</view>

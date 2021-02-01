@@ -1,0 +1,2 @@
+<!--pages/home/home.wxml-->
+<button class="page__button" type="primary" bindtap="goPage" wx:for="{{pageList}}" wx:for-item="page" wx:key="page" data-page="{{page}}">{{page}}</button>
